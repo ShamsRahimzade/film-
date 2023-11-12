@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@1,100;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <div class=" row p-4">
+                <div class=" logoo col-1">
+                    <a href="logo.html">
+                        <img width="150" height="120"  src="https://dynamic.brandcrowd.com/asset/logo/b82be737-11cd-4a07-8836-80214d440fb9/logo-search-grid-1x?logoTemplateVersion=1&v=638190123887370000&text=film%24&colorpalette=purple" alt="film$">
+                    </a>
+                </div>
+                <div class="bx bx-menu" id="menu-icon"></div>
+                <div class="col-6">
+                    <ul class="navbar list-unstyled d-flex justify-content-around p-5 text-color-#AB6AEC mb-2">
+                       <div class="dropdown">
+                           <li><a href=""><i>Movies</i></a></li>
+                           <div class="dropdown-content">
+                            <a href="">Horror</a>
+                            <a href="">Drama</a>
+                            <a href="">Animation</a>
+                            <a href="">Adventure</a>
+                            <a href=""> Action</a>
+                            <a href="">Sciencefiction</a>
+                            </div>
+                        </div>
+                           <li><a href=""><i>Documentary</i></a></li>
+                           <li><a href="cartoons.html"><i>Cartoons</i></a></li>
+                           <li><a href=""><i>TV Shows</i></a></li>
+                    </ul>
+                </div>
+               
+                    <div class="col-4 m-5 float-end">
+
+                        <select  class="float-end" style=" background-color:#0F041B" data-placeholder="Choose a Language...">
+                           
+                            <option value="AZE">AZE</option>
+                            <option value="ENG">ENG</option>
+                            <option value="RU">RU</option>
+                            <option value="TR">TR</option>
+                            
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Searching...">
+                        <button type="submit">Search</button>
+            </div>
+        </div>
+     </nav>
+     </header>
+     <button onclick="myFunction()"> dark mode</button>
+     <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+         
+     <main>   
+         <div class="container">
+             <div class="row  d-flex justify-content-around ">
+                 
+            </div>
+        </div>
+    </main>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    <script>
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100|| document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
+
+   
+</body>
+</html>
+
